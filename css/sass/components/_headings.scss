@@ -1,0 +1,38 @@
+.main-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 52px;
+    color: $main-color;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    .img {
+     display: block;
+     margin:6px auto 0;
+     width: 80%;
+     max-width: 139px;
+     height: auto;
+    }
+}
+
+.main-title-2 {
+ font-weight: 500;
+font-size: 35px;
+line-height: 48px;
+text-align: center;
+color: $text-color2;
+margin-bottom: 30px;
+}
+
+.bg-title {
+    background-color: $main-color;
+    border-right: 4px solid  $main-color-dark;
+    color: $white;
+    font-size: 17px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 auto 10px;
+    padding: 0 15px;
+  }
+  

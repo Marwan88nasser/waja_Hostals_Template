@@ -1,0 +1,370 @@
+.land-section {
+    .box {
+        gap: 98px;
+        @include maxWidth(md) {
+            gap: 1rem;
+        }
+        .text {
+            flex: 1;
+            .bar {
+                width: 47px;
+                height: 2px;
+                background-color: $main-color;
+                margin-bottom: 17px;
+            }
+            .text-1 {
+                font-weight: 500;
+                font-size: 20px;
+                margin-bottom: 6px;
+                line-height: 37px;
+            }
+            .text-2 {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 52px;
+                margin-bottom: 9px;
+                color: $main-color;
+            }
+            .main-btn {
+                margin-top: 38px;
+            }
+        }
+        .img {
+            width: 477px;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}
+
+.about-us {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.customers {
+    background-image: url("../images/bg2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: "";
+        background: rgba(120, 120, 120, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 52px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: $white;
+    }
+    .title-two {
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 71px;
+        color: $white;
+    }
+    .swiper {
+        height: fit-content;
+        .swiper-wrapper {
+            padding-bottom: calc(30px + 24px);
+        }
+        .swiper-pagination {
+            bottom: 0 !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            .swiper-pagination-bullet {
+                font-weight: 500 !important;
+                font-size: 12px !important;
+                line-height: 19px !important;
+                color: $text-color4 !important;
+                width: 24px !important;
+                height: 24px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: $white !important;
+                opacity: 1 !important;
+                &.swiper-pagination-bullet-active {
+                    background-color: $main-color !important;
+                    color: $white !important;
+                }
+            }
+        }
+        .box {
+            height: 100%;
+            background: linear-gradient(
+                to left,
+                $main-color 100px,
+                $white 100px
+            );
+            padding: 16px 61px 22px 22px;
+            .icon-berak {
+                width: 35px;
+                margin-right: auto;
+                display: block;
+            }
+            .img {
+                width: 120px;
+                height: auto;
+                max-height: 200px;
+                border: 3px solid $white;
+                object-fit: cover;
+            }
+            .name {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 24px;
+                color: $text-color3;
+                margin-bottom: 2px;
+            }
+            .info {
+                font-weight: 400;
+                font-size: 16px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+                    "Helvetica Neue", sans-serif;
+                line-height: 24px;
+                color: $text-color4;
+                margin-bottom: 5px;
+            }
+            .text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 30px;
+                color: $text-color4;
+                margin-bottom: 1rem;
+            }
+            .stars {
+                display: flex;
+                align-items: stretch;
+                width: fit-content;
+                .icons {
+                    background-color: $main-color;
+                    align-items: center;
+                    gap: 5px;
+                    display: flex;
+                    padding: 0 7.5px;
+                    border-radius: 2px 0 0 2px;
+                    color: #f9c623;
+                    .icon {
+                        width: 14px;
+                        height: auto;
+                    }
+                }
+                .num {
+                    color: $white;
+                    padding: 10px 18px;
+                    font-weight: 700;
+                    border-radius: 2px 0 0 2px;
+                    font-size: 15px;
+                    line-height: 14px;
+                    background-color: $main-color-light;
+                }
+            }
+            @include maxWidth(md) {
+                padding: 16px;
+                .name {
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $text-color3;
+                    margin-bottom: 2px;
+                }
+                .text {
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: $text-color4;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.partners {
+    .img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.contact {
+    padding-bottom: 70px !important;
+    position: relative;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 0;
+        z-index: -1;
+        top: 35px;
+        content:url("../images/layer-1.png")
+    }
+    &::before {
+        position: absolute;
+        width: auto;
+        height: auto;
+        right: 0;
+        z-index: -1;
+        bottom: 0;
+        content:url("../images/layer-2.png")
+    }
+    .form {
+        box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+        border-radius: 10px;
+        background-color: $white;
+        padding: 20px;
+        padding-right: 50px;
+        margin: 0 auto;
+        max-width: 950px;
+        .main-title {
+            margin-bottom: 30px;
+        }
+        .title {
+            font-weight: 400;
+            font-size: 24px;
+            margin-bottom: 30px;
+            line-height: 27px;
+            color: #0f001a;
+        }
+        .boxes {
+            display: flex;
+            gap: 80px;
+            .box {
+                flex: 1;
+                label {
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 18px;
+                    display: block;
+                    color: #0f001a;
+                    opacity: 0.8;
+                    margin-bottom: 13px;
+                    .sm {
+                        font-weight: 300;
+                        font-size: 12px;
+                        line-height: 13px;
+                        color: rgba(15, 0, 26, 0.7);
+                    }
+                }
+                .inp {
+                    margin-bottom: 14px;
+                }
+                .btn-sub {
+                    background-color: $main-color;
+                    color: $white;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 15px;
+                }
+                &.two {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    .item {
+                        display: flex;
+                        gap: 30px;
+                        align-items: center;
+                        .icon {
+                            width: 20px;
+                            height: auto;
+                        }
+                        .text {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22px;
+                            color: #0f001a;
+                        }
+                    }
+                    .social {
+                        margin-top: 3px;
+                        display: flex;
+                        align-items: center;
+                        gap: 25px;
+                        a {
+                            .icon {
+                                color: $main-color;
+                                font-size: 21px;
+                            }
+                        }
+                    }
+                    .map {
+                        iframe {
+                            border-radius: 4px;
+                            width: 100%;
+                            height: 155px;
+                            margin-top: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        @include maxWidth(md) {
+                padding-right: 20px;
+                .boxes {
+                    flex-direction: column;
+                    gap: 1rem;
+                    .box {
+                        &.two {
+                            .item {
+                                gap: 16px;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}
+
+.product {
+    .form {
+        box-shadow: 2px 10px 28px rgba(75, 0, 129, 0.12);
+        border-radius: 10px;
+        background-color: $white;
+        padding: 25px;
+        .title {
+            font-size: 23px;
+            font-weight: 600;
+            color: $main-color;
+            margin-bottom: 1rem;
+        }
+        .text {
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 3rem;
+            line-height: 24px;
+            color: #555555;
+        }
+        .inp {
+            padding:0.6rem 1rem;
+        }
+        .img {
+            width: 100%;
+            height: auto;
+            border-radius: 2px;
+            border: 2px solid white;
+        }
+    }
+}

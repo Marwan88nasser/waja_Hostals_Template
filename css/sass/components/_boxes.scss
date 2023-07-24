@@ -1,0 +1,212 @@
+// box-serv
+.box-serv {
+ height: 100%;
+    background: $white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+    .img {
+        height: 120px;
+        object-fit: cover;
+        width: auto;
+        max-width: 100%;
+        margin: 0 auto 6px;
+    }
+    .title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 37px;
+        margin-bottom: 6px;
+        color: $text-color3;
+    }
+    .text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        color: $text-color4;
+    }
+}
+
+// box-stat
+.box-stat {
+ padding: 20px 20px 22px;
+ text-align: center;
+ height: 100%;
+ transition: $sm-transition;
+ background: $white;
+ border: 0.5px solid rgba(123, 49, 135, 0.2);
+ border-radius: 4px;
+ position: relative;
+ &::after {
+  content: "";
+  transition: $sm-transition;
+ position: absolute;
+ bottom: 0;
+ width: 0;
+ height: 2px;
+ left: 50%;
+ background-color: $main-color;
+ transform: translateX(-50%);
+}
+&:hover {
+ box-shadow: 0px 10px 10px rgba(85, 85, 85, 0.1);
+ &::after {
+  width: 100%;
+ }
+}
+.img {
+ height: 60px;
+ object-fit: cover;
+ width: auto;
+ max-width: 100%;
+ margin: 0 auto 30px;
+}
+.title {
+ font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+color: $main-color;
+margin-bottom: 23px;
+}
+.text {
+ font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+margin: 0;
+color: $text-color4;
+}
+}
+
+// blocks article
+.box-article {
+    .date-holder {
+      z-index: 100;
+      @include reset-position;
+      @include centering;
+      gap: 5px;
+      background-color: $main-color;
+      padding: 9px 20px;
+      border-radius: 0px 10px 0px 10px;
+      color: $white;
+      font-size: 16px;
+      i,
+      svg {
+        color: $white;
+      }
+      p {
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+    }
+    &.show-article {
+      transition: $sm-transition;
+      position: relative;
+      border: 1px solid #cfd6d7;
+      border-radius: 10px;
+      padding: 15px;
+      .date-holder {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 7px 20px;
+        width: fit-content;
+      }
+      .img-holder {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        .img-article {
+          border-radius: 10px;
+          transition: transform, $sm-transition;
+          width: 100%;
+          object-fit: cover;
+          height: 260px;
+        }
+      }
+      .text-holder {
+        .article-title {
+          display: block;
+          transition: $xs-transition;
+          color: #3f5c74;
+          font-size: 16px;
+          font-weight: 600;
+          margin-bottom: 5px;
+        }
+        .article-des {
+          font-weight: 600;
+          color: #757575;
+          font-size: 13px;
+          margin-bottom: 0%;
+        }
+      }
+      .category {
+        display: block;
+        width: 100%;
+        color: #757575;
+        font-size: 11px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .share-holder {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        .circle {
+          cursor: pointer;
+          transition: $sm-transition;
+          @include circle(35px);
+          @include centering;
+          background-color: $main-color;
+          &:hover {
+            transform: translateY(-5px);
+          }
+          a {
+            @include centering;
+            color: $white;
+            i,
+            svg {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .box-side-News {
+    background-color: $main-color;
+    padding: 10px;
+    transition: $sm-transition;
+    &:hover {
+      background-color: $main-color-dark;
+    }
+    .img {
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+      object-fit: cover;
+    }
+    .title {
+      color: $white;
+      display: block;
+      font-size: 14px;
+      margin-bottom: 0px;
+      font-weight: bold;
+    }
+    .category {
+      font-size: 11px;
+      color: $main-color-dark;
+      margin-bottom: 5px;
+    }
+    .content {
+      color: $white;
+      margin: 0;
+      font-size: 13px;
+      max-width: 165px;
+      overflow: hidden;
+      @media (min-width: 768px) and (max-width: 1200px) {
+        max-width: 117px;
+      }
+    }
+  }
