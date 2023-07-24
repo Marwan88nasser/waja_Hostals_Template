@@ -109,6 +109,28 @@
   margin-bottom: 30px;
 }
 
+.second-title {
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 52.47px;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 30px;
+  color: #DB9069;
+}
+.second-title::before {
+  content: "";
+  position: absolute;
+  bottom: -10;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5px;
+  width: 75%;
+  background-color: #DB9069;
+}
+
 .bg-title {
   background-color: #DB9069;
   border-right: 4px solid #B0795D;

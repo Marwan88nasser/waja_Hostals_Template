@@ -1,38 +1,58 @@
 .main-title {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 52px;
-    color: $main-color;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 20px;
-    .img {
-     display: block;
-     margin:6px auto 0;
-     width: 80%;
-     max-width: 139px;
-     height: auto;
-    }
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 52px;
+  color: $main-color;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  .img {
+    display: block;
+    margin: 6px auto 0;
+    width: 80%;
+    max-width: 139px;
+    height: auto;
+  }
 }
 
 .main-title-2 {
- font-weight: 500;
-font-size: 35px;
-line-height: 48px;
-text-align: center;
-color: $text-color2;
-margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 48px;
+  text-align: center;
+  color: $text-color2;
+  margin-bottom: 30px;
+}
+
+.second-title {
+  position: relative;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 52.47px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto 30px;
+  color:  $main-color;
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -10;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.5px;
+    width: 75%;
+    background-color: $main-color;
+  }
 }
 
 .bg-title {
-    background-color: $main-color;
-    border-right: 4px solid  $main-color-dark;
-    color: $white;
-    font-size: 17px;
-    height: 45px;
-    line-height: 45px;
-    margin: 0 auto 10px;
-    padding: 0 15px;
-  }
-  
+  background-color: $main-color;
+  border-right: 4px solid $main-color-dark;
+  color: $white;
+  font-size: 17px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 auto 10px;
+  padding: 0 15px;
+}
