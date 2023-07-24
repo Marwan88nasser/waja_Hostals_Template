@@ -126,12 +126,12 @@
 }
 
 .main-title-2 {
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 48px;
+  color: #000;
+  margin-bottom: 35px;
   text-align: center;
-  color: #0B2239;
-  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px; /* 150% */
 }
 
 .second-title {
@@ -177,33 +177,33 @@
 
 .box-serv {
   height: 100%;
-  background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+  background: #FFF;
+  box-shadow: 0px 0px 10px 0px rgba(11, 34, 57, 0.1);
   text-align: center;
-  padding: 20px;
+  padding: 25px;
 }
 .box-serv .img {
-  height: 120px;
+  height: 70px;
   -o-object-fit: cover;
      object-fit: cover;
   width: auto;
   max-width: 100%;
-  margin: 0 auto 6px;
+  margin: 0 auto 14px;
 }
 .box-serv .title {
-  font-weight: 600;
+  color: #000;
   font-size: 20px;
-  line-height: 37px;
+  font-weight: 600;
+  line-height: normal;
   margin-bottom: 6px;
-  color: #000000;
 }
 .box-serv .text {
-  font-weight: 400;
+  color: #555;
   font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 30px;
-  color: #555555;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
 }
 
 .box-stat {
@@ -660,6 +660,25 @@ select:focus {
   }
 }
 
+.service {
+  background-image: url(../images/bg-serv.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.service::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: -1;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
 .contact {
   padding-bottom: 70px !important;
   position: relative;
@@ -797,14 +816,14 @@ select:focus {
 }
 .login .land {
   position: relative;
-  z-index: 5;
+  z-index: 1;
 }
 .login .land::before {
   position: absolute;
   content: "";
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: -1;
   bottom: 0;
   right: 0;
   background-color: rgba(219, 144, 105, 0.3);

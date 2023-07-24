@@ -114,6 +114,14 @@
   }
 }
 
+.service {
+  background-image: url(../images/bg-serv.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include overlay-before(white, 0.85);
+}
+
 .contact {
   padding-bottom: 70px !important;
   position: relative;

@@ -1,31 +1,31 @@
 // box-serv
 .box-serv {
  height: 100%;
-    background: $white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+ border-radius: 4px;
+ background: #FFF;
+ box-shadow: 0px 0px 10px 0px rgba(11, 34, 57, 0.10);
     text-align: center;
-    padding: 20px;
+    padding:25px;
     .img {
-        height: 120px;
+        height: 70px;
         object-fit: cover;
         width: auto;
         max-width: 100%;
-        margin: 0 auto 6px;
+        margin: 0 auto 14px;
     }
     .title {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 37px;
-        margin-bottom: 6px;
-        color: $text-color3;
+      color: #000;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 6px;
     }
     .text {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        margin-bottom: 30px;
-        color: $text-color4;
+      color: #555;
+      font-size: 14px;
+      margin-bottom: 0;
+      font-weight: 400;
+      line-height: 24px; /* 171.429% */
     }
 }
 
