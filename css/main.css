@@ -5,7 +5,8 @@
 .landing-swiper .swiper-slide img {
   width: 100%;
   height: 92%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .landing-swiper .swiper-pagination {
   bottom: 4%;
@@ -58,10 +59,12 @@
 }
 
 .h-fit {
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 .w-fit {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -87,12 +90,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
   gap: 11px;
   padding: 7px 33px;
   width: -moz-fit-content;
-=======
->>>>>>> 7faa36684c490e211cfa51aef40c24739d1754a3
   width: fit-content;
   cursor: pointer;
   color: #fff !important;
@@ -111,6 +111,7 @@
   font-size: 28px;
   line-height: 52px;
   color: #DB9069;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -139,6 +140,7 @@
   font-size: 28px;
   line-height: 52.47px;
   text-align: center;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto 30px;
   color: #DB9069;
@@ -183,7 +185,8 @@
 }
 .box-serv .img {
   height: 120px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: auto;
   max-width: 100%;
   margin: 0 auto 6px;
@@ -232,7 +235,8 @@
 }
 .box-stat .img {
   height: 60px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: auto;
   max-width: 100%;
   margin: 0 auto 30px;
@@ -287,6 +291,7 @@
   top: 0;
   right: 0;
   padding: 7px 20px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .box-article.show-article .img-holder {
@@ -297,7 +302,8 @@
   border-radius: 10px;
   transition: transform, 0.3s;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 260px;
 }
 .box-article.show-article .text-holder .article-title {
@@ -364,7 +370,8 @@
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .box-side-News .title {
   color: white;
@@ -400,6 +407,11 @@
   font-weight: 400;
   direction: rtl;
   display: block;
+}
+.inp::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(135, 135, 135, 0.5);
 }
 .inp::placeholder {
   font-size: 14px;
@@ -933,6 +945,11 @@ select:focus {
   padding: 9px 20px;
   border-radius: 0 10px 10px 0;
   flex: 1;
+  font-weight: 400;
+  font-size: 16px;
+  color: #b8b8b8;
+}
+.footer .footer-top .box-email .parent-inp .inp::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
   color: #b8b8b8;
