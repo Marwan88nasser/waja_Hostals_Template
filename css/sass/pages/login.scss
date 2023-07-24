@@ -1,0 +1,101 @@
+.login {
+  min-height: 100vh;
+  .land {
+    @include overlay-before(#DB9069, 0.3);
+    img {
+      width: 100%;
+    }
+  }
+  .logo {
+    width: 274px;
+    padding: 20px;
+    margin-right: 80px;
+    img {
+      width: 100%;
+    }
+  }
+  .text {
+    margin-right: 100px;
+    h3 {
+      font-family: Cairo;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 0em;
+      text-align: right;
+      color: #000;
+    }
+    .login-text {
+      display: flex;
+      gap: 10px;
+      p {
+        font-family: Cairo;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: right;
+      }
+      a {
+        font-family: Cairo;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0px;
+        text-align: right;
+        color: $main-color;
+        text-decoration: underline;
+      }
+    }
+  }
+  .form {
+    padding: 20px 100px;
+    input {
+      padding: 20px;
+      margin: 15px 0;
+    }
+    button {
+      width: 100%;
+      background-color: $main-color;
+      padding: 10px;
+      border-radius: 5px;
+      a {
+        color: #fff;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+  @include maxWidth(sm) {
+    .logo {
+      width: 274px;
+      padding: 20px;
+      margin-right: 10px;
+      img {
+        width: 100%;
+      }
+    }
+    .text {
+      margin-right: 30px;
+      h3 {
+        font-size: 24px;
+      }
+      .login-text {
+        p {
+          font-size: 12px;
+        }
+        a {
+          font-size: 12px;
+        }
+      }
+    }
+    .form {
+      padding: 20px;
+      button {
+        a {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

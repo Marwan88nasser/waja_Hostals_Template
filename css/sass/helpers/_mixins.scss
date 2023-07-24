@@ -74,7 +74,21 @@
     height: $damnation;
     border-radius: 50%;
 }
-
+//Overlay Before
+@mixin overlay-before($bg, $opc) {
+  position: relative;
+  z-index: 5;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    background-color: rgba($bg, $opc);
+  }
+}
 // set cover img
 @mixin cover-img {
     width: 100%;

@@ -35,12 +35,10 @@
 }
 
 .h-fit {
-  height: -moz-fit-content;
   height: fit-content;
 }
 
 .w-fit {
-  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -69,7 +67,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: -moz-fit-content;
   width: fit-content;
   line-height: 26px;
   gap: 5px;
@@ -86,7 +83,6 @@
   font-size: 28px;
   line-height: 52px;
   color: #DB9069;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -130,8 +126,7 @@
 }
 .box-serv .img {
   height: 120px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: auto;
   max-width: 100%;
   margin: 0 auto 6px;
@@ -180,8 +175,7 @@
 }
 .box-stat .img {
   height: 60px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: auto;
   max-width: 100%;
   margin: 0 auto 30px;
@@ -236,7 +230,6 @@
   top: 0;
   right: 0;
   padding: 7px 20px;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .box-article.show-article .img-holder {
@@ -247,8 +240,7 @@
   border-radius: 10px;
   transition: transform, 0.3s;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 260px;
 }
 .box-article.show-article .text-holder .article-title {
@@ -315,8 +307,7 @@
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .box-side-News .title {
   color: white;
@@ -352,11 +343,6 @@
   font-weight: 400;
   direction: rtl;
   display: block;
-}
-.inp::-moz-placeholder {
-  font-size: 14px;
-  font-weight: 400;
-  color: rgba(135, 135, 135, 0.5);
 }
 .inp::placeholder {
   font-size: 14px;
@@ -560,7 +546,6 @@ select:focus {
   color: white;
 }
 .customers .swiper {
-  height: -moz-fit-content;
   height: fit-content;
 }
 .customers .swiper .swiper-wrapper {
@@ -605,8 +590,7 @@ select:focus {
   height: auto;
   max-height: 200px;
   border: 3px solid white;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .customers .swiper .box .name {
   font-weight: 600;
@@ -633,7 +617,6 @@ select:focus {
 .customers .swiper .box .stars {
   display: flex;
   align-items: stretch;
-  width: -moz-fit-content;
   width: fit-content;
 }
 .customers .swiper .box .stars .icons {
@@ -838,6 +821,114 @@ select:focus {
   height: auto;
   border-radius: 2px;
   border: 2px solid white;
+}
+
+.login {
+  min-height: 100vh;
+}
+.login .land {
+  position: relative;
+  z-index: 5;
+}
+.login .land::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(219, 144, 105, 0.3);
+}
+.login .land img {
+  width: 100%;
+}
+.login .logo {
+  width: 274px;
+  padding: 20px;
+  margin-right: 80px;
+}
+.login .logo img {
+  width: 100%;
+}
+.login .text {
+  margin-right: 100px;
+}
+.login .text h3 {
+  font-family: Cairo;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+.login .text .login-text {
+  display: flex;
+  gap: 10px;
+}
+.login .text .login-text p {
+  font-family: Cairo;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.login .text .login-text a {
+  font-family: Cairo;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: right;
+  color: #DB9069;
+  text-decoration: underline;
+}
+.login .form {
+  padding: 20px 100px;
+}
+.login .form input {
+  padding: 20px;
+  margin: 15px 0;
+}
+.login .form button {
+  width: 100%;
+  background-color: #DB9069;
+  padding: 10px;
+  border-radius: 5px;
+}
+.login .form button a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 767.98px) {
+  .login .logo {
+    width: 274px;
+    padding: 20px;
+    margin-right: 10px;
+  }
+  .login .logo img {
+    width: 100%;
+  }
+  .login .text {
+    margin-right: 30px;
+  }
+  .login .text h3 {
+    font-size: 24px;
+  }
+  .login .text .login-text p {
+    font-size: 12px;
+  }
+  .login .text .login-text a {
+    font-size: 12px;
+  }
+  .login .form {
+    padding: 20px;
+  }
+  .login .form button a {
+    font-size: 14px;
+  }
 }
 
 .footer {
