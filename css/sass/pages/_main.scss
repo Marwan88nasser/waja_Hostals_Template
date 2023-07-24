@@ -115,11 +115,19 @@
 }
 
 .service {
+  padding: 29px 0 !important;
+  margin: 35px 0 70px !important;
   background-image: url(../images/bg-serv.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   @include overlay-before(white, 0.85);
+}
+
+.statistics {
+  padding: 29px 0 !important;
+  background-color: #FAFAFA;
+  margin: 0 0 35px!important;
 }
 
 .contact {
