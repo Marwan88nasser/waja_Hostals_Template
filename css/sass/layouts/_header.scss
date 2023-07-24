@@ -6,7 +6,7 @@
     .items {
         display: flex;
         align-items: center;
-        gap: 107px;
+        gap: 59px;
         flex-wrap: wrap;
         @include maxWidth(sm) {
             gap: 2rem;
@@ -29,16 +29,20 @@
 }
 
 .bottom-nav {
-    background-color: transparent !important;
+    background-color: white !important;
     color: $text-color1;
-    padding: calc(2rem - 6px) 0;
+    padding: 22px 0;
     .logo {
-        color: $main-color;
-        font-weight: 700;
-        font-size: 24px;
+        img {
+          width: 187px;
+          height: auto;
+          @include maxWidth(sm) {
+            width: 100px;
+          }
+        }
     }
     .navbar-nav {
-        gap: 61px;
+        gap: 48px;
         @include maxWidth(md) {
             gap: 0.5rem;
         }
