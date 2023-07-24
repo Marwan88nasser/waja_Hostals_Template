@@ -35,10 +35,12 @@
 }
 
 .h-fit {
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 .w-fit {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -67,6 +69,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: -moz-fit-content;
   width: fit-content;
   line-height: 26px;
   gap: 5px;
@@ -83,6 +86,7 @@
   font-size: 28px;
   line-height: 52px;
   color: #DB9069;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -126,7 +130,8 @@
 }
 .box-serv .img {
   height: 120px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: auto;
   max-width: 100%;
   margin: 0 auto 6px;
@@ -175,7 +180,8 @@
 }
 .box-stat .img {
   height: 60px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: auto;
   max-width: 100%;
   margin: 0 auto 30px;
@@ -230,6 +236,7 @@
   top: 0;
   right: 0;
   padding: 7px 20px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .box-article.show-article .img-holder {
@@ -240,7 +247,8 @@
   border-radius: 10px;
   transition: transform, 0.3s;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 260px;
 }
 .box-article.show-article .text-holder .article-title {
@@ -307,7 +315,8 @@
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .box-side-News .title {
   color: white;
@@ -343,6 +352,11 @@
   font-weight: 400;
   direction: rtl;
   display: block;
+}
+.inp::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(135, 135, 135, 0.5);
 }
 .inp::placeholder {
   font-size: 14px;
@@ -463,11 +477,11 @@ select:focus {
 }
 .bottom-nav .btn-nav {
   border-radius: 4px;
-  background-color: #DB9069;
-  color: white;
-  font-size: 14px;
-  line-height: 26px;
-  padding: 5px 20px;
+  border: 1px solid #DB9069;
+  color: #DB9069;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 4px 11px;
 }
 
 .land-section .box {
@@ -550,6 +564,7 @@ select:focus {
   color: white;
 }
 .customers .swiper {
+  height: -moz-fit-content;
   height: fit-content;
 }
 .customers .swiper .swiper-wrapper {
@@ -594,7 +609,8 @@ select:focus {
   height: auto;
   max-height: 200px;
   border: 3px solid white;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .customers .swiper .box .name {
   font-weight: 600;
@@ -621,6 +637,7 @@ select:focus {
 .customers .swiper .box .stars {
   display: flex;
   align-items: stretch;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .customers .swiper .box .stars .icons {
@@ -865,6 +882,7 @@ select:focus {
   line-height: 60px;
   letter-spacing: 0em;
   text-align: right;
+  color: #000;
 }
 .login .text .login-text {
   display: flex;
