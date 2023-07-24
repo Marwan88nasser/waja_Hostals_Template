@@ -1,19 +1,20 @@
 .main-btn {
- background-color: $white;
- color: $main-color;
- border:1px solid $main-color;
- font-weight: 500;
-font-size: 14px;
-display: flex;
-align-items: center;
-justify-content: center;
-width: fit-content;
-line-height: 26px;
-gap: 5px;
-border-radius: 4px;
-padding: 6px 16px;
-&.color{
- background-color: $main-color;
- color: $white;
-}
+  border-radius: 50px;
+  background: $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  padding: 7px 33px;
+  width: fit-content;
+  cursor: pointer;
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 600;
+  outline: 0;
+  line-height: normal;
+  &.xl {
+    padding-left: 93px;
+      padding-right: 93px;
+  }
 }
