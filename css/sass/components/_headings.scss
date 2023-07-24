@@ -41,7 +41,7 @@
     left: 50%;
     transform: translateX(-50%);
     height: 1.5px;
-    width: 75%;
+    width: 60%;
     background-color: $main-color;
   }
 }
@@ -55,4 +55,12 @@
   line-height: 45px;
   margin: 0 auto 10px;
   padding: 0 15px;
+}
+
+.main-text {
+  color: rgba(0, 0, 0, 0.60);
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+line-height: normal;
 }
