@@ -168,6 +168,32 @@
   line-height: normal;
 }
 
+.units {
+  margin: 100px 0;
+}
+.units .title {
+  padding: 10px;
+  margin: 50px 0;
+  text-align: center;
+  font-family: Cairo;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  color: #db9069;
+  position: relative;
+}
+.units .title::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  background-color: #db9069;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .box-serv {
   height: 100%;
   background: white;
@@ -384,6 +410,87 @@
   .box-side-News .content {
     max-width: 117px;
   }
+}
+
+.units .card {
+  padding: 10px;
+}
+.units .card .content {
+  display: flex;
+  flex-direction: column;
+}
+.units .card .content .image img {
+  width: 100%;
+}
+.units .card .content .text .line-one {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.units .card .content .text .line-one h3 {
+  font-family: Cairo;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #000;
+}
+.units .card .content .text .line-one p {
+  font-family: Cairo;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 0em;
+  color: #db9069;
+}
+.units .card .content .text .line-two {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.units .card .content .text .line-two p {
+  color: #B4B4B4;
+  margin: 0;
+  padding: 0 10px;
+}
+.units .card .content .text .line-tree {
+  display: flex;
+  align-items: center;
+}
+.units .card .content .text .line-tree .item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.units .card .content .text .line-tree .item p {
+  font-family: Cairo;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  margin: 0;
+  padding: 0 10px;
+}
+.units .card .content .text .line-four {
+  padding: 10px;
+}
+.units .card .content .text .line-four .item {
+  display: flex;
+  align-items: center;
+}
+.units .card .content .text .line-four .item p {
+  margin: 0;
+  padding: 0 10px;
+}
+.units .card .content button {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #db9069;
+  border-radius: 4px;
+}
+.units .card .content button a {
+  color: #db9069;
 }
 
 .inp {
@@ -939,110 +1046,4 @@ select:focus {
   font-weight: 400;
   line-height: normal;
   padding: 10px 0 11px;
-}
-
-.units {
-  margin: 100px 0;
-}
-.units .title {
-  padding: 10px;
-  margin: 50px 0;
-  text-align: center;
-  font-family: Cairo;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 52px;
-  letter-spacing: 0em;
-  color: #db9069;
-  position: relative;
-}
-.units .title::before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  background-color: #db9069;
-  height: 2px;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.units .card {
-  padding: 10px;
-}
-.units .card .content {
-  display: flex;
-  flex-direction: column;
-}
-.units .card .content .image img {
-  width: 100%;
-}
-.units .card .content .text .line-one {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.units .card .content .text .line-one h3 {
-  font-family: Cairo;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 34px;
-  letter-spacing: 0em;
-  text-align: right;
-  color: #000;
-}
-.units .card .content .text .line-one p {
-  font-family: Cairo;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 37px;
-  letter-spacing: 0em;
-  color: #db9069;
-}
-.units .card .content .text .line-two {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-.units .card .content .text .line-two p {
-  color: #B4B4B4;
-  margin: 0;
-  padding: 0 10px;
-}
-.units .card .content .text .line-tree {
-  display: flex;
-  align-items: center;
-}
-.units .card .content .text .line-tree .item {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-}
-.units .card .content .text .line-tree .item p {
-  font-family: Cairo;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0em;
-  margin: 0;
-  padding: 0 10px;
-}
-.units .card .content .text .line-four {
-  padding: 10px;
-}
-.units .card .content .text .line-four .item {
-  display: flex;
-  align-items: center;
-}
-.units .card .content .text .line-four .item p {
-  margin: 0;
-  padding: 0 10px;
-}
-.units .card .content button {
-  background-color: #fff;
-  padding: 10px;
-  border: 1px solid #db9069;
-  border-radius: 4px;
-}
-.units .card .content button a {
-  color: #db9069;
 }/*# sourceMappingURL=main.css.map */
