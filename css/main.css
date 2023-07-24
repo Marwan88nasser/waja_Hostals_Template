@@ -481,6 +481,7 @@ select:focus {
   color: #DB9069;
   font-size: 16px;
   font-weight: 500;
+  line-height: normal;
   padding: 4px 11px;
 }
 
