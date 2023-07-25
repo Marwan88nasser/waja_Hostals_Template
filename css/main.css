@@ -81,7 +81,7 @@
 }
 
 .main-section {
-  padding: 35px 0;
+  padding: 25px 0;
 }
 
 .main-btn {
@@ -428,7 +428,7 @@ body {
   min-height: 100vh;
   font-family: "Cairo", sans-serif;
   font-size: 16px;
-  background-color: #F3F3F3;
+  background-color: #FFF;
   color: rgba(0, 0, 0, 0.6);
 }
 
