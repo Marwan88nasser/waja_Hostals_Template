@@ -1,2 +1,0 @@
-# waja_Hostals_Template
-waja_Hostals_Template

@@ -17,31 +17,31 @@
 }
 
 .main-title-2 {
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 48px;
-  text-align: center;
-  color: $text-color2;
-  margin-bottom: 30px;
+  color: #000;
+  margin-bottom: 35px;
+text-align: center;
+font-size: 32px;
+font-weight: 600;
+line-height: 48px; /* 150% */
 }
 
 .second-title {
   position: relative;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 28px;
   line-height: 52.47px;
   text-align: center;
   width: fit-content;
   margin: 0 auto 30px;
-  color:  $main-color;
+  color: $main-color;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -10;
     left: 50%;
     transform: translateX(-50%);
     height: 1.5px;
-    width: 75%;
+    width: 60%;
     background-color: $main-color;
   }
 }
@@ -55,4 +55,37 @@
   line-height: 45px;
   margin: 0 auto 10px;
   padding: 0 15px;
+}
+
+.main-text {
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.units {
+  margin: 100px 0;
+  .title {
+    padding: 10px;
+    margin: 50px 0;
+    text-align: center;
+    font-family: Cairo;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+    color: #db9069;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      background-color: #db9069;
+      height: 2px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
 }
